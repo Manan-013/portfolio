@@ -589,6 +589,9 @@ function getBotResponse(userMessage) {
   if (msg.includes('contact') || msg.includes('hire') || msg.includes('email') || msg.includes('social') || msg.includes('linkedin') || msg.includes('git')) {
     return getRandomResponse(knowledgeBase.contact);
   }
+  if (msg.includes('education') || msg.includes('college') || msg.includes('university') || msg.includes('gpa') || msg.includes('sgpa') || msg.includes('study') || msg.includes('school')) {
+    return "I am pursuing my <strong>B.Tech in Computer Science & Engineering</strong> at <strong>Techno NJR Institute of Technology, Udaipur</strong> (Batch of 2024–2028), maintaining an SGPA of <strong>8.2/10</strong>.";
+  }
   if (msg.includes('who') || msg.includes('about') || msg.includes('role') || msg.includes('profile') || msg.includes('resume') || msg.includes('cv')) {
     return getRandomResponse(knowledgeBase.role);
   }
